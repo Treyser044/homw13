@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+
+body{
+    background-color: #202C36;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.beck{
+    background-color: #2B3844;
+    box-shadow: 0px 2px 4px 0px #0000000E;
+    width: 100%;
+    height: 80px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    justify-content: space-between;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+  }
+
+  .dropdown-label {
+    background-color: #2c3844;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .dropdown-label::after {
+    content: '▾';
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .dropdown-popup {
+    display: none;
+    position: absolute;
+    top: 100%; /* появляется снизу */
+    left: 0;
+    background-color: #2c3844;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 10px 20px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .dropdown:hover .dropdown-popup {
+    display: block;
+  }
+
+
+.nav h2{
+    font-family: Nunito Sans;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: white;    
+}
+
+.nav a{
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: white;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.search input{
+    width: 480px;
+    height: 56px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+    background-color: #2B3844;
+    border: 0px solid #000;
+    color: white;
+    padding-left: 74px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+
+}
+
+.search img{
+    position: absolute;
+    left: 32px;
+    top: 19px;
+}
+
+.flag{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 74px;
+    justify-content: center;
+    margin-bottom: 161px;
+}
+
+.rasm{
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 2px #00000008;
+    background-color: #2B3844;
+    font-family: Nunito Sans;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: white;
+    text-align: center;
+    gap: 29px;
+}
+
+.rasm img{
+    width: 100%;
+    height: 160px;
+    border-top-right-radius: -8px;
+}
+
+@media  (max-width:836px){
+    .container{
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    .beck{
+        width: 836px;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        padding-top: 23px;
+        margin-left: 34;
+    }
+    
+    .nav h2{
+        font-family: Nunito Sans;
+font-weight: 800;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0px;
+ 
+    }
+    
+    .nav a{
+        font-family: Nunito Sans;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: white;
+    }
+    
+    .search{
+        display: flex;
+        position: relative;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .search input{
+        width: 780px;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px #0000000E;
+        background-color: #2B3844;
+        border: 0px solid #000;
+        color: white;
+        padding-left: 100px;
+        font-family: Nunito Sans;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0px;
+                
+    
+    }
+    
+    .search img{
+        position: absolute;
+        left: 32px;
+        top: 33px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .flag{
+        gap: 240px;
+        margin-bottom: 161px;
+    }
+    
+    .rasm{
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        height: 250px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 7px 2px #00000008;
+        background-color: #2B3844;
+        font-family: Nunito Sans;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: white;
+        text-align: center;
+        gap: 29px;
+    }
+    
+    .rasm img{
+        width: 100%;
+        height: 160px;
+    }
+}
+
+@media   (max-width:375px){
+    .beck{
+        width: 100%;
+    }
+   
+    .nav{
+        display: flex;
+        align-items: center;
+        padding-top: 23px;
+        justify-content: space-between;        
+    }
+    
+    .nav h2{
+        font-family: Nunito Sans;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        
+ 
+    }
+    
+    .nav a{
+        font-family: Nunito Sans;
+font-weight: 600;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0px;
+
+    }
+    
+    .search{
+        display: flex;
+        position: relative;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    
+    .search input{
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px #0000000E;
+        background-color: #2B3844;
+        border: 0px solid #000;
+        color: white;
+        font-family: Nunito Sans;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        height: 48px;
+        padding-left: -30px;
+    }
+    
+    .search img{
+        position: absolute;
+        left: 32px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .flag{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 240px;
+        justify-content: center;
+        margin-bottom: 161px;
+    }
+    
+    .rasm{
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        height: 250px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 7px 2px #00000008;
+        background-color: #2B3844;
+        font-family: Nunito Sans;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: white;
+        text-align: center;
+        gap: 29px;
+    }
+    
+    .rasm img{
+        width: 100%;
+        height: 160px;
+        border-top-right-radius: -8px;
+    }
+}
